@@ -28,7 +28,7 @@
 27. purpose of printer - [capable of representing data on a paper]
 28. sampling work in signal processing - [converts discrete signals into highs and lows]
 29. hierarchy contribution - [refers to system that are organized in the shape of a pyramid]
-30. NOT an output device - [Monitor]
+30. NOT an input device - [Monitor]
 
 # MIDTERM
 1. fastest memory in computer that holds info - [Register]
@@ -93,3 +93,71 @@
 28. NOT a main dcondition for DMA - [ I/O module must rely heavily on storage]
 29. I/O controller - [allows processing of each instruction]
 30. I/O response time - [total elapsed time to accomplish an input]
+
+# Finals
+
+computer hardware used to remember data - [Storage Devices]
+All previous data have to be read - [Serial Access]
+Possible to get to the required item directly - [Random Access]
+
+### Hierarchy of Storage
+CPU accesses the data in the conventional memory (RAM) - [Primary Storage]
+Not immediately available to CPU, is treated I/O, except for Flash Memory and is slower - [Secondary Storage]
+
+### Kinds of Storage
+consists of 1 or more flat, circular patterns made of glass, metal, or plastic and are coated with magnetic substance - [Magnetic Disks]
+Traces out the disk surface as the disk rotates - [Track]
+the surface of the platter are viewed as divided into equally sized pie shape - [Sector]
+
+### Disk Characteristics
+time that takes to TRANSFER data and the SUM of seek time and rotational delay - [Access Time]
+time required for the head to READ OR WRITE data - [Reading or Writing Time]
+time that takes the head move to the PROPER TRACK - [Seek Time]
+time that takes a sector to be positioned UNDER read/write head - [Rotational Delay]
+represented by RPM - [Rotation Speed]
+defines the organization of information stored in the hard disk - [FILE SYSTEM]
+EXT, XFS - [Linux File System]
+FAT, NFTS - [Windows File System]
+HFS+, APFS - [MacOSX]
+
+### Kinds of Storage 2.0
+Solid state medium that uses volatile memory - [Solid State Memory]
+basis of Solid State Memory which differs from RAM - [NAND Flash Chips]
+alternative to magnetic disks - [Optical Disks]
+CD-ROM (12cm) - [650MB]
+Blue-ray - [>50GB]
+DVD Tech - [4.7GB]
+Non-volatile and under proper storage conditions and data can be stored indefinitely - [Magnetic Tapes]
+Current Tape Cartriges can store - [3TB compressed data or 1.5TB of uncompressed data]
+Currently in development that can hold as large as 12TB - [Cartriges with uncompressed cap]
+Technique used for this type of storage - [data streaming]
+
+Types of disk controllers that are used in storage devices - [Disk Controller]
+first type or HDD that made use of Parallel interface standard to connect to computers. Referred to Enhanced Integrated Drive Elelctronics - [Parallel Advanced Tech Attachment]
+replaced PATA drives in desktop and laptop computers - [Serial Advanced Tech Attachment]
+quite similar to Integrated Drive Electronics that use of parallel interfaced standard developed by ANSI - [SCSI Small Comp Sys Interface]
+new tech of HDD, combines the advantages of parallel SCSI and SATA - [Serial Attached SCSI]
+
+Performance Enhancements
+- Larger Blocks
+- Pre Fetch
+- Access Algo
+- Disk Array
+
+### Storage Access Algo
+handles the request based on their ARRIVAL order -[First Come First Served FCFS]
+handles the request based on their DISTANCE from the current head location - [Shortest Time First Algo]
+where the head starts at one end of the disk while MOVING to the other end, handles all requests along the way - [scan (elevator algo)]
+similar to SCAN - [C-SCAN (Circular SCAN)]
+improvement of C-SCAN, head moves forward until it finds a request with the larger cylinder - [C-LOOK]
+
+can be used to reduce overall data access time by sharing the data among multiple disks - [Disk Array]
+consists of 2 disk drives, each disk stores exactly the same data - [Mirrored]
+divided into multiple blocks - [Stripped Array]
+
+remote data storage done over a computer network - [Cloud Storage]
+LAN intended to handle large amounts of data - [SAN (Storage Attached Network)]
+Storage resources connected directly to the network - [NAN (Network Attached Storage)]
+
+allows a single computer to appear as multiplicity of computers - [virtualization]
+simulated machines - [VM]
